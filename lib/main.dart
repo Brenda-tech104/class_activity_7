@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 //Brenda samano
-
+//Thomas Munoz
 void main() {
   runApp(MyApp());
 }
@@ -74,10 +74,7 @@ class _FadingTextAnimationState extends State<FadingTextAnimation>
           duration: const Duration(seconds: 1),
           child: AnimatedBuilder(
             animation: _rotationAnimation,
-            child: const Text(
-              'Hello, Flutter!',
-              style: TextStyle(fontSize: 24),
-            ),
+            child:Image.network('https://th.bing.com/th/id/OIP.wwxK07x0Umfnh0l-nrjxjgHaDg?rs=1&pid=ImgDetMain'),
             builder: (context, child) {
               return Transform.rotate(
                 angle: _rotationAnimation.value,
